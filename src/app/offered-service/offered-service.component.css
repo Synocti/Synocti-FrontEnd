@@ -1,0 +1,129 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Services Introduction */
+.services-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.services-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.services-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Service Cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* Technologies Section */
+.technologies-section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+/* Styles for @omnedia/ngx-marquee */
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-10));
+    padding: 5rem 0;
+}
+
+.cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .services-intro h2,
+    .section-header h2,
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technologies-section {
+        padding: 3rem 0;
+    }
+
+    ::ng-deep .custom-marquee {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .services-intro h2,
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    ::ng-deep .custom-marquee {
+        gap: 1rem;
+    }
+}

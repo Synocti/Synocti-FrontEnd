@@ -1,0 +1,14 @@
+<!-- Transparent cutout crescent -->
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <!-- Mask: white = visible, black = masked (transparent) -->
+    <mask id="cut-mask">
+      <rect x="0" y="0" width="200" height="200" fill="white"></rect>
+      <!-- the circle below cuts out (becomes transparent) -->
+      <circle cx="130" cy="70" r="70" fill="black"></circle>
+    </mask>
+  </defs>
+
+  <!-- big grey moon, masked by the cut circle -->
+  <circle cx="100" cy="100" r="80" fill="#9AA0A6" mask="url(#cut-mask)"></circle>
+</svg>

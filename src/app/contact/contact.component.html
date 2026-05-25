@@ -1,0 +1,179 @@
+<main class="contact-page">
+
+  <!-- Contact Information and Form -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info card" data-aos="fade-up">
+          <h2>{{ 'contact.info.title' | translate }}</h2>
+          <p>
+            {{ 'contact.info.subtitle' | translate }}
+          </p>
+
+          <div class="info-item">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="details">
+              <h3>{{ 'contact.info.email.label' | translate }}</h3>
+              <a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="details">
+              <h3>{{ 'contact.info.phone.label' | translate }}</h3>
+              <a href="tel:{{contactInfo.phone}}">{{contactInfo.phone}}</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="details">
+              <h3>{{ 'contact.info.hours.label' | translate }}</h3>
+              <span>{{ contactInfo.hours | translate }}</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <app-social-icon link="https://www.linkedin.com/company/synocti/"
+            icon="fab fa-linkedin"></app-social-icon>
+            <app-social-icon link="https://github.com/SyNocti" icon="fab fa-github"></app-social-icon>
+            <app-social-icon link="https://www.instagram.com/synocti"
+            icon="fab fa-instagram"></app-social-icon>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container card" data-aos="fade-up" data-aos-delay="200">
+          <h2>{{ 'contact.form.title' | translate }}</h2>
+
+          <!-- Success Message -->
+          @if (success) {
+            <div class="alert alert-success">
+              <i class="fas fa-check-circle"></i> {{ 'contact.form.success' | translate }}
+            </div>
+          }
+
+          <!-- Error Message -->
+          @if (error) {
+            <div class="alert alert-error">
+              <i class="fas fa-times-circle"></i> {{ 'contact.form.error' | translate }}
+            </div>
+          }
+
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-group">
+              <label for="fullName">{{ 'contact.form.fullName.label' | translate }} <span
+              class="required">*</span></label>
+              <input type="text" id="fullName" formControlName="fullName"
+                [placeholder]="'contact.form.fullName.placeholder' | translate"
+                [ngClass]="{'invalid': f['fullName'].invalid && f['fullName'].touched}">
+                @if (f['fullName'].invalid && f['fullName'].touched) {
+                  <div class="error-message">
+                    @if (f['fullName'].errors?.['required']) {
+                      <span>{{ 'contact.form.fullName.required' |
+                      translate }}</span>
+                    }
+                    @if (f['fullName'].errors?.['minlength']) {
+                      <span>{{ 'contact.form.fullName.minlength' |
+                      translate }}</span>
+                    }
+                  </div>
+                }
+              </div>
+
+              <div class="form-group">
+                <label for="email">{{ 'contact.form.email.label' | translate }} <span
+                class="required">*</span></label>
+                <input type="email" id="email" formControlName="email"
+                  [placeholder]="'contact.form.email.placeholder' | translate"
+                  [ngClass]="{'invalid': f['email'].invalid && f['email'].touched}">
+                  @if (f['email'].invalid && f['email'].touched) {
+                    <div class="error-message">
+                      @if (f['email'].errors?.['required']) {
+                        <span>{{ 'contact.form.email.required' |
+                          translate
+                        }}</span>
+                      }
+                      @if (f['email'].errors?.['email']) {
+                        <span>{{ 'contact.form.email.invalid' | translate
+                        }}</span>
+                      }
+                    </div>
+                  }
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">{{ 'contact.form.phone.label' | translate }}</label>
+                  <input type="tel" id="phone" formControlName="phone"
+                    [placeholder]="'contact.form.phone.placeholder' | translate"
+                    [ngClass]="{'invalid': f['phone'].invalid && f['phone'].touched}">
+                    @if (f['phone'].invalid && f['phone'].touched) {
+                      <div class="error-message">
+                        @if (f['phone'].errors?.['pattern']) {
+                          <span>{{ 'contact.form.phone.invalid' | translate
+                          }}</span>
+                        }
+                      </div>
+                    }
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactMethod">{{ 'contact.form.contactMethod.label' | translate }}</label>
+                    <select id="contactMethod" formControlName="contactMethod">
+                      <option value="email">{{ 'contact.form.contactMethod.options.email' | translate }}
+                      </option>
+                      <option value="phone">{{ 'contact.form.contactMethod.options.phone' | translate }}
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject">{{ 'contact.form.subject.label' | translate }}</label>
+                    <input type="text" id="subject" formControlName="subject"
+                      [placeholder]="'contact.form.subject.placeholder' | translate">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">{{ 'contact.form.message.label' | translate }} <span
+                      class="required">*</span></label>
+                      <textarea id="message" formControlName="message" rows="6"
+                        [placeholder]="'contact.form.message.placeholder' | translate"
+                      [ngClass]="{'invalid': f['message'].invalid && f['message'].touched}"></textarea>
+                      @if (f['message'].invalid && f['message'].touched) {
+                        <div class="error-message">
+                          @if (f['message'].errors?.['required']) {
+                            <span>{{ 'contact.form.message.required' |
+                            translate }}</span>
+                          }
+                          @if (f['message'].errors?.['minlength']) {
+                            <span>{{ 'contact.form.message.minlength' |
+                            translate }}</span>
+                          }
+                        </div>
+                      }
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block"
+                      [disabled]="loading || contactForm.invalid">
+                      @if (!loading) {
+                        <span>{{ 'contact.form.submit' | translate }}</span>
+                      }
+                      @if (loading) {
+                        <span><i class="fas fa-spinner fa-spin"></i> {{ 'contact.form.sending' |
+                      translate }}</span>
+                    }
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>

@@ -1,0 +1,264 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Story Content */
+.story-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.story-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+  transform: scale(1.05);
+}
+
+.story-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+}
+
+/* Mission & Vision */
+.mission-section {
+  padding: 6rem 0;
+}
+
+.mission-vision-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.mission-box,
+.vision-box {
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.mission-box h2,
+.vision-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+.mission-box p,
+.vision-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* Section title and description */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Values Section */
+.values-section {
+  padding: 6rem 0 12rem 00;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  padding: 2rem 2rem 0rem 2rem;
+  text-align: center;
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0rem;
+  color: var(--text-color);
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color-10));
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.cta-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-image {
+    order: -1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .mission-vision-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .story-text h2,
+  .section-title,
+  .cta-container h2 {
+    font-size: 2rem;
+  }
+
+  .mission-vision-container {
+    gap: 3rem;
+  }
+
+  .values-section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .mission-box,
+  .vision-box {
+    padding: 1.5rem;
+  }
+
+  .mission-vision-container {
+    gap: 4rem;
+  }
+
+  .values-section {
+    padding: 3rem 0;
+  }
+
+  .mission-section {
+    padding: 3rem 0;
+  }
+
+  .story-content {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .cta-section {
+    margin-top: 2.5rem;
+  }
+}

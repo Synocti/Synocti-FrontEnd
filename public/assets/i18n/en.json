@@ -1,0 +1,528 @@
+{
+    "header": {
+        "home": "Home",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "aboutUs": "About Us",
+        "ourStory": "Our Story",
+        "meetTheTeam": "Meet the Team",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "title": "We Build Powerful Digital Solutions for Businesses and Individuals",
+            "subtitle": "From custom software and applications to modern websites and fully managed hosting, we deliver scalable and dependable technology built around your goals.",
+            "contact": "Contact Us",
+            "seeOurWork": "See Our Work"
+        },
+        "services": {
+            "title": "Our Services",
+            "subtitle": "Comprehensive web solutions tailored to your business needs"
+        },
+        "about": {
+            "title": "Why Choose Us",
+            "subtitle": "We combine technical expertise with creative excellence",
+            "description": "At Synocti, we are dedicated to building digital solutions that are reliable, scalable and tailored to real-world needs. Our team combines deep technical expertise with thoughtful design to create software, applications, websites and hosting environments that truly support the success of our clients.",
+            "features": {
+                "performance": "Fast Performance",
+                "responsive": "Responsive Design",
+                "secure": "Secure Code",
+                "support": "Dedicated Support"
+            }
+        },
+        "portfolio": {
+            "title": "Our Latest Work",
+            "subtitle": "Browse through our recent projects",
+            "seeMore": "See More Projects"
+        },
+        "process": {
+            "title": "Our Process",
+            "subtitle": "A proven approach to delivering outstanding results",
+            "steps": {
+                "discovery": {
+                    "title": "Discovery",
+                    "description": "We learn about you, your business, goals and target audience."
+                },
+                "design": {
+                    "title": "Design",
+                    "description": "We outline the structure and look of your solution based on your goals."
+                },
+                "development": {
+                    "title": "Development",
+                    "description": "We build your solution with clean, reliable and scalable code."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "description": "We deploy your product and ensure everything works smoothly."
+                }
+            }
+        },
+        "cta": {
+            "title": "Let's Build Something Great Together",
+            "subtitle": "Ready to take your web presence to the next level ?",
+            "button": "Request a Free Quote"
+        }
+    },
+    "common": {
+        "learnMore": "Learn More"
+    },
+    "footer": {
+        "tagline": "Crafting digital experiences that transform businesses and individuals",
+        "services": "Our Services",
+        "company": {
+            "title": "Company",
+            "story": "Our Story",
+            "team": "Our Team",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact Us"
+        },
+        "copyright": "© {{year}} Synocti. All rights reserved.",
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Policy"
+        }
+    },
+    "services": {
+        "intro": {
+            "title": "Our Development Services",
+            "description": "We offer a comprehensive range of development solutions designed to help businesses and individuals establish a strong digital presence. From web to mobile, desktop applications, and hosting, we have the expertise to bring your vision to life."
+        },
+        "servicesList": {
+            "web": {
+                "title": "Web Development",
+                "description": "Modern, high-performance websites tailored to your needs, from simple landing pages to complex web applications.",
+                "features": [
+                    "Responsive and adaptive websites",
+                    "Dynamic web applications",
+                    "Content management systems",
+                    "E-commerce and online platforms",
+                    "Built-in SEO optimization"
+                ]
+            },
+            "mobile": {
+                "title": "Mobile Development",
+                "description": "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.",
+                "features": [
+                    "Native iOS and Android apps",
+                    "Cross-platform development",
+                    "Intuitive user interface",
+                    "API and service integration",
+                    "Ongoing support and maintenance"
+                ]
+            },
+            "desktop": {
+                "title": "Desktop Development",
+                "description": "Powerful desktop applications for Windows, macOS, and Linux tailored to your specific business processes.",
+                "features": [
+                    "Cross-platform applications",
+                    "Native user interface",
+                    "Optimized performance",
+                    "Full system integration",
+                    "Updates and technical support"
+                ]
+            },
+            "hosting": {
+                "title": "Hosting & Maintenance",
+                "description": "Reliable hosting services and ongoing maintenance to ensure your applications always run optimally.",
+                "features": [
+                    "Secure and fast hosting",
+                    "Frequent automatic backups",
+                    "24/7 monitoring",
+                    "Security updates",
+                    "Priority technical support"
+                ]
+            }
+        },
+        "technologies": {
+            "title": "Technologies We Use",
+            "subtitle": "Modern and proven tools to build high-performance solutions"
+        },
+        "cta": {
+            "title": "Ready to Get Started?",
+            "subtitle": "Let's discuss how we can help your business succeed online.",
+            "contact": "Contact Us"
+        }
+    },
+    "portfolio": {
+        "visitWebsite": "Visit Website"
+    },
+    "story": {
+        "origin": {
+            "title": "How It All Started",
+            "text": [
+                "We began as two computer science students who refused to wait for the perfect opportunity. Instead of following the traditional path and hoping for experience to come to us, we decided to create our own.",
+                "In early 2025, we launched our development business with a clear mission: to build real, impactful digital solutions while continuously expanding our expertise. Our background gives us a strong technical foundation, and our drive pushes us to deliver modern, efficient and well-crafted work.",
+                "We approach every project with confidence, curiosity and a commitment to quality. From software and applications to websites and hosting, we focus on developing solutions that create value and help our clients succeed."
+            ],
+            "imageAlt": "Our Founders"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To create dependable, high-quality digital solutions that make technology simpler, more accessible and more impactful for our clients. We focus on clear communication, efficient execution and results that bring real value to every project we deliver."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To build a long-lasting reputation as a team that blends innovation with professionalism, offering solutions that evolve with our clients’ needs. We strive to become a trusted partner known for consistency, integrity and a genuine commitment to growth."
+        },
+        "values": {
+            "title": "Our Values",
+            "subtitle": "The principles that guide everything we do",
+            "excellence": {
+                "title": "Excellence",
+                "description": "We strive for excellence in every line of code and pixel of design."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "We embrace new technologies and approaches to solve complex problems."
+            },
+            "integrity": {
+                "title": "Integrity",
+                "description": "We build relationships based on honesty, transparency, and ethical practices."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "description": "We believe in the power of teamwork and partnership with our clients."
+            }
+        },
+        "cta": {
+            "title": "Ready to Work Together?",
+            "subtitle": "Let's create something amazing for you.",
+            "contact": "Get in Touch",
+            "services": "Our Services"
+        }
+    },
+    "team": {
+        "intro": {
+            "title": "Our Talented Team",
+            "description": "We bring strong technical expertise and creative problem-solving together to deliver outstanding results. With a lean, focused group, you have direct access to the people driving every decision and shaping every solution."
+        },
+        "members": {
+            "hugo": {
+                "name": "Hugo Levacher",
+                "role": "Co-Founder & Developer"
+            },
+            "henri": {
+                "name": "Henri Saumure",
+                "role": "Co-Founder & Developer"
+            }
+        }
+    },
+    "contact": {
+        "info": {
+            "title": "Contact Information",
+            "subtitle": "Reach out to us using any of the following methods and we'll get back to you as soon as possible.",
+            "email": {
+                "label": "Email"
+            },
+            "phone": {
+                "label": "Phone"
+            },
+            "hours": {
+                "label": "Business Hours",
+                "value": "Monday - Friday: 9am - 5pm"
+            }
+        },
+        "form": {
+            "title": "Send Us a Message",
+            "success": "Thank you! Your message has been sent successfully.",
+            "error": "Something went wrong. Please try again later.",
+            "fullName": {
+                "label": "Full Name",
+                "placeholder": "John Doe",
+                "required": "Please enter your name",
+                "minlength": "Name must be at least 2 characters"
+            },
+            "email": {
+                "label": "Email Address",
+                "placeholder": "johndoe@example.com",
+                "required": "Please enter your email",
+                "invalid": "Please enter a valid email address"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "(555) 123-4567",
+                "invalid": "Please enter a valid phone number"
+            },
+            "contactMethod": {
+                "label": "Preferred Contact Method",
+                "options": {
+                    "email": "Email",
+                    "phone": "Phone"
+                }
+            },
+            "subject": {
+                "label": "Subject",
+                "placeholder": "How can we help you?"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Tell us more about your project or question...",
+                "required": "Please enter your message",
+                "minlength": "Message must be at least 10 characters"
+            },
+            "submit": "Send Message",
+            "sending": "Sending..."
+        },
+        "map": {
+            "title": "Find Us"
+        }
+    },
+    "notFound": {
+        "content": {
+            "title": "Oops! We can't find that page",
+            "message": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable."
+        },
+        "buttons": {
+            "home": "Go to Homepage",
+            "contact": "Contact Us"
+        }
+    },
+    "legal": {
+        "lastUpdated": "Last Updated",
+        "documents": {
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "Introduction",
+                        "content": [
+                            "This Privacy Policy explains how Synocti (\"we,\" \"our,\" or \"us\") collects, uses, and discloses your information when you use our website, services, and products.",
+                            "By using our services, you agree to the collection and use of information in accordance with this policy."
+                        ]
+                    },
+                    {
+                        "heading": "Information We Collect",
+                        "content": [
+                            "We only collect personal information that you voluntarily provide to us when using our contact forms. This information is used solely for the purpose of responding to your inquiries and improving our services.",
+                            "• Personal Data: When you fill out a contact form, we may ask you to provide certain personally identifiable information (\"Personal Data\"). This may include:",
+                            "- Your full name",
+                            "- Email address",
+                            "- Phone number (if provided)",
+                            "- The content of your message or inquiry",
+                            "• No Automatic Data Collection: We do not collect usage data, cookies, or track your browsing behavior on our website."
+                        ]
+                    },
+                    {
+                        "heading": "How We Use Your Information",
+                        "content": [
+                            "We only use the personal information you provide through our contact forms for the following purpose:",
+                            "• To respond to your inquiries or requests submitted through the website"
+                        ]
+                    },
+                    {
+                        "heading": "Data Retention",
+                        "content": [
+                            "We retain the information you provide through our contact forms and support tickets only for as long as necessary to respond to your inquiry or resolve your issue.",
+                            "Once a support request or ticket is resolved, the data is moved to an archive for record-keeping and reference purposes. Archived data is securely stored and not actively used."
+                        ]
+                    },
+                    {
+                        "heading": "Data Transfer",
+                        "content": [
+                            "We do not transfer your data to any third parties or to locations outside of our organization.",
+                            "All information submitted through our website, including any personal data, is processed and stored securely within our internal systems.",
+                            "We are committed to maintaining your privacy and ensuring that your information remains protected and within our control at all times."
+                        ]
+                    },
+                    {
+                        "heading": "Your Rights",
+                        "content": [
+                            "Since we only collect personal information that you voluntarily submit through our contact forms, your rights regarding this information include:",
+                            "• The right to access the information you submitted to us",
+                            "• The right to request correction of any inaccurate contact information",
+                            "• The right to request deletion of your information after your inquiry or support ticket is resolved",
+                            "• The right to withdraw your request or inquiry at any time",
+                            "We do not use your data for marketing, automated decision-making, or data profiling.",
+                            "To exercise any of these rights, please contact us using the details provided at the end of this Privacy Policy."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to This Privacy Policy",
+                        "content": [
+                            "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date.",
+                            "You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+                        ]
+                    },
+                    {
+                        "heading": "Legal Compliance",
+                        "content": [
+                            "While we are committed to protecting your privacy, there are circumstances where we may be required to disclose your personal information:",
+                            "• If required to comply with a legal obligation, court order, or government request",
+                            "• To protect and defend our legal rights or property",
+                            "• To prevent or investigate possible wrongdoing in connection with the service",
+                            "• To protect the safety of users or the public",
+                            "In such cases, we will only disclose the minimum necessary information to comply with our legal obligations."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about this Privacy Policy, please contact us:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "terms": {
+                "title": "Terms of Service",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "Acceptance of Terms",
+                        "content": [
+                            "By accessing or using the website of Synocti (\"Company\", \"we\", \"our\", or \"us\"), you agree to be bound by these Terms of Use (\"Terms\"). If you do not agree with any part of these Terms, you may not access or use our website or services.",
+                            "These Terms apply to all visitors, users, and others who access the website."
+                        ]
+                    },
+                    {
+                        "heading": "Use of the Website",
+                        "content": [
+                            "You may use our website only for lawful purposes and in accordance with these Terms. You agree not to use the website:",
+                            "• In any way that violates applicable local, national, or international laws or regulations.",
+                            "• To exploit, harm, or attempt to exploit or harm minors in any way.",
+                            "• To transmit or procure the sending of any advertising or promotional material without our prior written consent.",
+                            "• To impersonate or attempt to impersonate Synocti, a Synocti employee, another user, or any other person or entity."
+                        ]
+                    },
+                    {
+                        "heading": "Intellectual Property Rights",
+                        "content": [
+                            "All content on this website, including but not limited to text, graphics, logos, icons, images, audio clips, video, software, and data compilations is the exclusive property of Synocti or its licensors and is protected by copyright, trademark, and other intellectual property laws.",
+                            "You may not copy, reproduce, distribute, modify, or create derivative works of any part of this website or its content without express written permission from Synocti."
+                        ]
+                    },
+                    {
+                        "heading": "Disclaimer of Warranties",
+                        "content": [
+                            "This website is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. We do not guarantee that the website or any content, service, or feature will be error-free, uninterrupted, or secure, or that any defects will be corrected.",
+                            "To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement."
+                        ]
+                    },
+                    {
+                        "heading": "Limitation of Liability",
+                        "content": [
+                            "To the maximum extent permitted by law, Synocti and its officers, employees, contractors, or agents shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of the website or any services, even if we were advised of the possibility of such damages.",
+                            "This includes, without limitation, any loss of profits, data, goodwill, or other intangible losses."
+                        ]
+                    },
+                    {
+                        "heading": "Third-Party Links and Services",
+                        "content": [
+                            "Our website may contain links to third-party websites or services that are not owned or controlled by Synocti.",
+                            "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. You acknowledge and agree that Synocti is not liable, directly or indirectly, for any damage or loss caused by your use of any such content or services."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to the Terms",
+                        "content": [
+                            "We may update these Terms from time to time to reflect changes in our services, practices, or legal requirements. The latest version will always be posted on this page with the 'Last Updated' date.",
+                            "By continuing to use the website after changes are posted, you agree to be bound by the updated Terms."
+                        ]
+                    },
+                    {
+                        "heading": "Indemnification",
+                        "content": [
+                            "You agree to defend, indemnify, and hold harmless Synocti and its employees, contractors, officers, and agents from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising out of your violation of these Terms or your use of the website."
+                        ]
+                    },
+                    {
+                        "heading": "Governing Law",
+                        "content": [
+                            "These Terms shall be governed by and construed in accordance with the laws of the Province of Quebec and the federal laws of Canada applicable therein, without regard to conflict of law principles.",
+                            "Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Montreal, Quebec."
+                        ]
+                    },
+                    {
+                        "heading": "User Accounts",
+                        "content": [
+                            "Certain features of our Services, including access to our client portal, require you to create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information as necessary.",
+                            "You are solely responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security.",
+                            "We reserve the right to suspend or terminate your account at any time if we reasonably believe that you have violated these Terms or are otherwise engaging in unlawful or fraudulent activity."
+                        ]
+                    },
+                    {
+                        "heading": "Billing and Payments",
+                        "content": [
+                            "Access to certain Services may require payment. While our pricing model may vary by service or project, you will always be informed of applicable charges before incurring them.",
+                            "By agreeing to use a paid Service, you authorize us to charge your selected payment method for all fees associated with that service.",
+                            "We reserve the right to change our pricing or billing terms at any time with prior notice. Continued use of the Services after the effective date of any such changes constitutes your acceptance of the new pricing.",
+                            "Failure to make timely payments may result in suspension or termination of your access to Services, including the client portal.",
+                            "All fees are non-refundable unless otherwise stated in a written agreement or as required by applicable law."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about these Terms, you may contact us at:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "Cookie Policy",
+                "lastUpdated": "May 23, 2025",
+                "sections": [
+                    {
+                        "heading": "What Are Cookies",
+                        "content": [
+                            "Cookies are small pieces of text sent to your web browser by a website you visit. A cookie file is stored in your web browser and allows the website to remember your preferences and enhance your user experience.",
+                            "Cookies can be \"persistent\" or \"session\" cookies. Persistent cookies remain on your device when you go offline, while session cookies are deleted as soon as you close your web browser."
+                        ]
+                    },
+                    {
+                        "heading": "How We Use Cookies",
+                        "content": [
+                            "We use a limited number of cookies to improve your experience on our website. Specifically, we use cookies to:",
+                            "• Remember your selected website theme (light or dark mode)",
+                            "• Remember your chosen language preference (french or english)",
+                            "We do not use cookies for analytics, advertising, or tracking purposes."
+                        ]
+                    },
+                    {
+                        "heading": "Types of Cookies We Use",
+                        "content": [
+                            "Functionality cookies: These cookies allow our website to remember choices you make, such as theme and language. Their purpose is to enhance your personal experience and prevent you from having to reselect settings on each visit.",
+                            "We do not use essential, analytics, or advertising cookies."
+                        ]
+                    },
+                    {
+                        "heading": "Third-Party Cookies",
+                        "content": [
+                            "We do not use any third-party cookies. No cookie data is shared with or collected by third-party services."
+                        ]
+                    },
+                    {
+                        "heading": "What Are Your Choices Regarding Cookies",
+                        "content": [
+                            "If you prefer to avoid the use of cookies, you can disable them in your browser settings. You can also delete any cookies already stored in your browser.",
+                            "Please note that if you disable cookies, your selected theme and language preferences may not be remembered, which could affect your browsing experience."
+                        ]
+                    },
+                    {
+                        "heading": "Changes to This Cookie Policy",
+                        "content": [
+                            "We may update our Cookie Policy from time to time. Any changes will be posted on this page with an updated \"Last Updated\" date.",
+                            "We recommend reviewing this policy periodically to stay informed about how we use cookies."
+                        ]
+                    },
+                    {
+                        "heading": "Contact Us",
+                        "content": [
+                            "If you have any questions about our Cookie Policy, please contact us:",
+                            "• By email: contact@synocti.ca",
+                            "• By phone: (438) 493-5557"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

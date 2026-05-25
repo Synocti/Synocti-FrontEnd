@@ -1,0 +1,138 @@
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="heading-large" data-aos="fade-up">{{ 'home.hero.title' | translate }}</h1>
+      <p class="text-large mb-2" data-aos="fade-up" data-aos-delay="200">{{ 'home.hero.subtitle' | translate }}</p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="#" routerLink="/contact" class="btn btn-primary">{{ 'home.hero.contact' | translate }}</a>
+        <a href="#" routerLink="/portfolio" class="btn btn-outline">{{ 'home.hero.seeOurWork' | translate }}</a>
+      </div>
+    </div>
+    <div class="hero-image" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+      <img src="assets/images/moon.svg" alt="Crescent Moon" class="moon-graphic" />
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>{{ 'home.services.title' | translate }}</h2>
+      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.services.subtitle' | translate }}</p>
+    </div>
+    <div class="grid grid-3">
+      @for (service of serviceCards; track service; let i = $index) {
+      <app-service-card [service]="service" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="150 * (i + 1)">
+      </app-service-card>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+@if (portfolioItems.length > 0) {
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>{{ 'home.portfolio.title' | translate }}</h2>
+      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.portfolio.subtitle' | translate }}</p>
+    </div>
+    <div class="grid grid-2 mb-3">
+      @for (project of portfolioItems; track project.id; let i = $index) {
+      <app-portfolio-item [project]="project" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="200 * (i + 1)">
+      </app-portfolio-item>
+      }
+    </div>
+    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+      <a routerLink="/portfolio" class="btn btn-outline">{{ 'home.portfolio.seeMore' | translate }}</a>
+    </div>
+  </div>
+</section>
+}
+
+<!-- About Section -->
+<section class="section">
+  <div class="container">
+    <div class="about-content">
+      <div class="section-header" data-aos="fade-up">
+        <h2>{{ 'home.about.title' | translate }}</h2>
+        <p data-aos="fade-up" data-aos-delay="100">{{ 'home.about.subtitle' | translate }}</p>
+      </div>
+      <p class="text-normal max-w-800 text-center mb-3 about-text" data-aos="fade-up" data-aos-delay="200">
+        {{ 'home.about.description' | translate }}
+      </p>
+      <div class="flex flex-wrap justify-center gap-2">
+        <div class="feature" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-bolt"></i>
+          <span>{{ 'home.about.features.performance' | translate }}</span>
+        </div>
+        <div class="feature" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-mobile-alt"></i>
+          <span>{{ 'home.about.features.responsive' | translate }}</span>
+        </div>
+        <div class="feature" data-aos="zoom-in" data-aos-delay="500">
+          <i class="fas fa-lock"></i>
+          <span>{{ 'home.about.features.secure' | translate }}</span>
+        </div>
+        <div class="feature" data-aos="zoom-in" data-aos-delay="600">
+          <i class="fas fa-headset"></i>
+          <span>{{ 'home.about.features.support' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>{{ 'home.process.title' | translate }}</h2>
+      <p data-aos="fade-up" data-aos-delay="100">{{ 'home.process.subtitle' | translate }}</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+        <div class="step-number">1</div>
+        <div class="step-icon"><i class="fas fa-comments"></i></div>
+        <h3 class="heading-small">{{ 'home.process.steps.discovery.title' | translate }}</h3>
+        <p class="text-small">{{ 'home.process.steps.discovery.description' | translate }}</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+        <div class="step-number">2</div>
+        <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+        <h3 class="heading-small">{{ 'home.process.steps.design.title' | translate }}</h3>
+        <p class="text-small">{{ 'home.process.steps.design.description' | translate }}</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-right" data-aos-delay="400">
+        <div class="step-number">3</div>
+        <div class="step-icon"><i class="fas fa-code"></i></div>
+        <h3 class="heading-small">{{ 'home.process.steps.development.title' | translate }}</h3>
+        <p class="text-small">{{ 'home.process.steps.development.description' | translate }}</p>
+      </div>
+
+      <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+        <div class="step-number">4</div>
+        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+        <h3 class="heading-small">{{ 'home.process.steps.launch.title' | translate }}</h3>
+        <p class="text-small">{{ 'home.process.steps.launch.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="heading-medium" data-aos="fade-up">{{ 'home.cta.title' | translate }}</h2>
+      <p class="text-large mb-2" data-aos="fade-up" data-aos-delay="200">{{ 'home.cta.subtitle' | translate }}</p>
+      <div data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="center-bottom">
+        <a href="#" routerLink="/contact" class="btn btn-light">{{ 'home.cta.button' | translate }}</a>
+      </div>
+    </div>
+  </div>
+</section>

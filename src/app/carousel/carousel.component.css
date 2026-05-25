@@ -1,0 +1,126 @@
+.carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    /* Changed from 1000px to 100% */
+    width: 100%;
+    overflow: hidden;
+    /* Add this to prevent overflow */
+}
+
+.carousel-content {
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    /* Add padding inside the content */
+}
+
+.carousel-item {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-arrow {
+    background: var(--surface-color);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow.prev {
+    left: 10px;
+    /* Moved closer to edge */
+}
+
+.carousel-arrow.next {
+    right: 10px;
+    /* Moved closer to edge */
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+    .carousel-content {
+        padding: 0 2.5rem;
+        /* Increase padding on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0;
+        /* Remove container padding */
+    }
+
+    .carousel-content {
+        padding: 0 2.5rem;
+        /* Ensure sufficient padding for arrows */
+    }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-arrow.prev {
+        left: 5px;
+    }
+
+    .carousel-arrow.next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-content {
+        padding: 0 1.5rem;
+        /* Slightly reduce padding on very small screens */
+    }
+}

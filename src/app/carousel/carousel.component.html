@@ -1,0 +1,28 @@
+<div class="carousel-container">
+    <!-- Left arrow -->
+    <button *ngIf="showArrows && items.length > 1" class="carousel-arrow prev" (click)="prev()">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- Content -->
+    <div class="carousel-content">
+        <div class="carousel-item">
+            <ng-container *ngIf="itemTemplate">
+                <ng-container
+                    *ngTemplateOutlet="itemTemplate; context: { $implicit: items[activeIndex], index: activeIndex }">
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+
+    <!-- Right arrow -->
+    <button *ngIf="showArrows && items.length > 1" class="carousel-arrow next" (click)="next()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Indicators -->
+    <div *ngIf="showIndicators && items.length > 1" class="carousel-indicators">
+        <button *ngFor="let item of items; let i = index" [class.active]="i === activeIndex" (click)="goToItem(i)">
+        </button>
+    </div>
+</div>

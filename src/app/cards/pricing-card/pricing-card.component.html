@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-content">
+    <div class="title-with-icon">
+      <i class="fas {{icon}} service-icon"></i>
+      <h3>{{title | translate}}</h3>
+    </div>
+    <p class="card-description">{{description | translate}}</p>
+    <ul class="feature-list">
+      @for (feature of (featuresKey | translate); track feature) {
+        <li>
+          <i class="fas fa-check"></i>
+          <span>{{feature}}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

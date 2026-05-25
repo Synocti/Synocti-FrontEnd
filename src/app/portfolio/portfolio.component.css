@@ -1,0 +1,122 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Project Row Layout */
+.portfolio-projects {
+    margin: 4rem 0;
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    /* Explicitly set to start to ensure top alignment */
+    margin-bottom: 8rem;
+}
+
+.project-row.reverse {
+    direction: rtl;
+}
+
+.project-row.reverse .project-details,
+.project-row.reverse .project-visual {
+    direction: ltr;
+    /* Reset text direction for content */
+}
+
+/* Project Visual */
+.project-visual {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project-visual:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Details */
+.project-details {
+    padding: 0;
+    /* No padding */
+    margin-top: 0;
+    /* No top margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-client {
+    margin-top: 0;
+    /* Remove any default top margin */
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.project-year {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: block;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Project Link Styling */
+.project-link {
+    width: fit-content;
+}
+
+.project-link i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .project-row {
+        gap: 2rem;
+    }
+
+    .project-client {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-row.reverse {
+        direction: ltr;
+    }
+
+    .project-visual {
+        order: 1;
+        /* Always show visual first on mobile */
+    }
+
+    .project-details {
+        order: 2;
+        /* Always show details second on mobile */
+        margin-top: 2rem;
+        /* Add space when stacked on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-projects {
+        margin: 2rem 0;
+    }
+
+    .project-client {
+        font-size: 1.6rem;
+    }
+}

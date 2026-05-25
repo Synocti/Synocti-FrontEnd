@@ -1,0 +1,10 @@
+<div class="separator">
+    <ng-container [ngSwitch]="type">
+        <svg *ngSwitchCase="'curve-1'" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path
+                d="M0,0 C100,10 200,40 300,25 C400,10 500,50 600,35 C700,20 800,60 900,35 C1000,10 1100,40 1200,30 C1300,20 1370,5 1440,0
+                L1440,100 C1370,95 1300,80 1200,90 C1100,100 1000,75 900,85 C800,95 700,65 600,80 C500,95 400,65 300,75 C200,85 100,90 0,100 L0,0 Z" />
+        </svg>
+        <div *ngSwitchCase="'line'" class="thin-line"></div>
+    </ng-container>
+</div>

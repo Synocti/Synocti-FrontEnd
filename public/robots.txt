@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Internal or utility routes that should not be indexed
+Disallow: /404
+Disallow: /not-found
+
+Host: https://synocti.ca
+Sitemap: https://synocti.ca/sitemap.xml

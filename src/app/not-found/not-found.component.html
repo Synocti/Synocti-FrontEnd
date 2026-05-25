@@ -1,0 +1,21 @@
+<main class="not-found-page">
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="not-found-content text-center" data-aos="fade-up">
+                <div class="not-found-icon">
+                    <i class="fas fa-map-signs"></i>
+                </div>
+                <h2>{{ 'notFound.content.title' | translate }}</h2>
+                <p>
+                    {{ 'notFound.content.message' | translate }}
+                </p>
+
+                <div class="navigation-options">
+                    <a routerLink="/" class="btn btn-primary">{{ 'notFound.buttons.home' | translate }}</a>
+                    <a routerLink="/contact" class="btn btn-outline">{{ 'notFound.buttons.contact' | translate }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

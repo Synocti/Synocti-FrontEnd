@@ -1,0 +1,77 @@
+<main class="story-page">
+  <!-- Origin Story Section -->
+  <section class="section">
+    <div class="container">
+      <div class="story-content" data-aos="fade-up">
+        <div class="story-text">
+          <h2>{{ 'story.origin.title' | translate }}</h2>
+          @for (paragraph of ('story.origin.text' | translate); track paragraph) {
+            <p>{{paragraph}}</p>
+          }
+        </div>
+        <div class="story-image" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/images/founders.jpg" alt="{{ 'story.origin.imageAlt' | translate }}" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission & Vision Section -->
+  <section class="section mission-section">
+    <div class="container">
+      <div class="mission-vision-container" data-aos="fade-up">
+        <div class="mission-box card">
+          <h2>{{ 'story.mission.title' | translate }}</h2>
+          <p>
+            {{ 'story.mission.description' | translate }}
+          </p>
+        </div>
+        <div class="vision-box card">
+          <h2>{{ 'story.vision.title' | translate }}</h2>
+          <p>
+            {{ 'story.vision.description' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="section values-section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">{{ 'story.values.title' | translate }}</h2>
+      <p class="section-description text-center" data-aos="fade-up" data-aos-delay="100">
+        {{ 'story.values.subtitle' | translate }}
+      </p>
+
+      <div class="values-grid">
+        @for (value of values; track value; let i = $index) {
+          <div class="card value-card" [attr.data-aos]="'fade-up'"
+            [attr.data-aos-delay]="100 * i">
+            <div class="value-icon">
+              <i class="fas {{value.icon}}"></i>
+            </div>
+            <h3>{{ value.titleKey | translate }}</h3>
+            <p>{{ value.descriptionKey | translate }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-container text-center" data-aos="fade-up">
+        <h2>{{ 'story.cta.title' | translate }}</h2>
+        <p>{{ 'story.cta.subtitle' | translate }}</p>
+        <div class="cta-buttons">
+          <a routerLink="/contact" class="btn btn-light">{{ 'story.cta.contact' | translate }}</a>
+          <a routerLink="/services" class="btn btn-light-outline">{{ 'story.cta.services'
+            |
+          translate }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

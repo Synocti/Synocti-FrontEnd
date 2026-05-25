@@ -1,0 +1,60 @@
+<main class="services-page">
+
+  <!-- Services Introduction -->
+  <section class="section">
+    <div class="container">
+      <div class="services-intro text-center" data-aos="fade-up">
+        <h2>{{ 'services.intro.title' | translate }}</h2>
+        <p class="services-description">
+          {{ 'services.intro.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="services-grid">
+        @for (service of services; track service; let i = $index) {
+          <div [id]="service.id" [attr.data-aos]="'fade-up'"
+            [attr.data-aos-delay]="i * 100">
+            <app-pricing-card [title]="service.titleKey" [description]="service.descriptionKey"
+              [featuresKey]="service.featuresKey" [serviceId]="service.id" [icon]="service.icon">
+            </app-pricing-card>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Marquee Section -->
+  <section class="section technologies-section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2>{{ 'services.technologies.title' | translate }}</h2>
+        <p>{{ 'services.technologies.subtitle' | translate }}</p>
+      </div>
+    </div>
+    <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <om-marquee [animationDuration]="'30s'" [pauseOnHover]="true" [marqueeGap]="'0rem'"
+        styleClass="custom-marquee">
+        @for (tech of technologies; track $index) {
+          <ng-template [omMarqueeItem]="tech">
+            <app-technology-card [name]="tech.name" [logo]="tech.logo" [category]="tech.category">
+            </app-technology-card>
+          </ng-template>
+        }
+      </om-marquee>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-container text-center" data-aos="fade-up">
+        <h2>{{ 'services.cta.title' | translate }}</h2>
+        <p>{{ 'services.cta.subtitle' | translate }}</p>
+        <div class="cta-buttons">
+          <a routerLink="/contact" class="btn btn-light">{{ 'services.cta.contact' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

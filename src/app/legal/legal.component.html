@@ -1,0 +1,42 @@
+<main class="legal-page">
+
+  <!-- Legal Content Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="legal-container">
+        <!-- Document Selector -->
+        <div class="document-selector" data-aos="fade-up">
+          <button class="btn btn-outline" [class.active]="activeDocumentType === 'privacy'"
+            (click)="setActiveDocument('privacy')">
+            {{ 'legal.documents.privacy.title' | translate }}
+          </button>
+          <button class="btn btn-outline" [class.active]="activeDocumentType === 'terms'"
+            (click)="setActiveDocument('terms')">
+            {{ 'legal.documents.terms.title' | translate }}
+          </button>
+          <button class="btn btn-outline" [class.active]="activeDocumentType === 'cookies'"
+            (click)="setActiveDocument('cookies')">
+            {{ 'legal.documents.cookies.title' | translate }}
+          </button>
+        </div>
+
+        <!-- Document Content -->
+        <div class="legal-content" data-aos="fade-up" data-aos-delay="100">
+          <div class="legal-sections">
+            @if (activeDocument.sectionsKey | translate; as sections) {
+              @for (section of sections; track section; let i = $index) {
+                <div class="legal-section"
+                  [id]="'section-' + i">
+                  <h2>{{ section.heading }}</h2>
+                  @for (paragraph of section.content; track paragraph) {
+                    <p>{{ paragraph }}</p>
+                  }
+                </div>
+              }
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

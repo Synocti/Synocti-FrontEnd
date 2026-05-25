@@ -1,0 +1,81 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Legal Container */
+.legal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Document Selector */
+.document-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.document-selector button.active {
+    background-color: var(--primary-color);
+    color: var(--text-opposite);
+    border: var(--primary-color);
+}
+
+/* Legal Content */
+.legal-content {
+    margin-bottom: 3rem;
+}
+
+/* Legal Sections */
+.legal-sections {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 100px;
+}
+
+.legal-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.legal-section p {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+
+    .document-selector {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .document-selector button {
+        width: 100%;
+    }
+
+    .legal-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .legal-container {
+        padding: 1rem 0;
+    }
+
+    .legal-section h2 {
+        font-size: 1.25rem;
+    }
+}

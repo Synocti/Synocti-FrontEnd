@@ -1,0 +1,26 @@
+<main class="portfolio-page">
+
+  <!-- Portfolio Projects -->
+  <section class="section">
+    <div class="container">
+      <!-- Portfolio Projects with alternating layout -->
+      <div class="portfolio-projects">
+        @for (project of projects; track project.id; let i = $index) {
+        <div class="project-row" [class.reverse]="i % 2 !== 0">
+          <div class="project-visual" data-aos="fade-up" data-aos-delay="100">
+            <app-portfolio-item [project]="project"></app-portfolio-item>
+          </div>
+          <div class="project-details" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="project-client">{{project.client}}</h3>
+            <span class="project-year">{{project.annee}}</span>
+            <p class="project-description">{{project.description}}</p>
+            <a class="project-link btn btn-light" [href]="project.link" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> {{ 'portfolio.visitWebsite' | translate }}
+            </a>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </section>
+</main>

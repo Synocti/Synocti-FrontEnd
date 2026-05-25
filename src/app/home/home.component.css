@@ -1,0 +1,271 @@
+/* Global Section Styles */
+section {
+    padding: 10rem 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    z-index: 1;
+    padding: 5rem 0;
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-content {
+    width: 600px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    background: linear-gradient(90deg, var(--text-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-cta a {
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 500px;
+}
+
+.moon-graphic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+/* About Section */
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.about-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.feature i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* Portfolio Section */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-cta {
+    text-align: center;
+}
+
+/* Process Section */
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.process-steps::after {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    max-width: 200px;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.step-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.process-step p{
+    color: var(--text-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-10));
+    padding: 6rem 0;
+}
+
+.cta-section h2,
+p {
+    color: white;
+}
+
+/* Content Styles */
+.content {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .process-steps::after {
+        width: 2px;
+        height: 80%;
+        left: 50%;
+        top: 10%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 6rem 0 4rem;
+    }
+
+    .hero-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}

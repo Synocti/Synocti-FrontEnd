@@ -1,0 +1,112 @@
+<!-- Overlay first -->
+<div class="overlay" [class.active]="isMenuOpen" (click)="closeMenu()"></div>
+
+<!-- Main drawer outside header -->
+<aside class="drawer" [class.active]="isMenuOpen">
+    <button class="close-menu" (click)="closeMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <nav class="drawer-nav">
+        <!-- In the drawer (mobile menu) -->
+        <ul class="nav-list">
+            <li><a href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                    (click)="closeMenu()">{{
+                    'header.home' | translate }}</a>
+            </li>
+
+            <!-- Change from dropdown to regular link -->
+            <li><a href="#" routerLink="/services" routerLinkActive="active" (click)="closeMenu()">{{ 'header.services'
+                    | translate }}</a>
+            </li>
+
+            <li><a href="#" routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">{{
+                    'header.portfolio' | translate }}</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" (click)="toggleDropdown('about', $event)">
+                    {{ 'header.aboutUs' | translate }} <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" [class.show]="activeDropdown === 'about'">
+                    <li><a href="#" routerLink="/story" (click)="closeMenu()">{{ 'header.ourStory' | translate }}</a>
+                    </li>
+                    <li><a href="#" routerLink="/team" (click)="closeMenu()">{{ 'header.meetTheTeam' | translate }}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="drawer-actions">
+            <a href="#" routerLink="/contact" class="cta-button btn btn-primary" (click)="closeMenu()">{{
+                'header.contact' | translate
+                }}</a>
+        </div>
+    </nav>
+</aside>
+
+<!-- Header -->
+<header class="main-header" [class.scrolled]="isScrolled">
+    <div class="header-container">
+        <div class="logo">
+            <a href="#" routerLink="/">
+                <img src="assets/logo/logo.svg" alt="Synocti Logo" class="logo-icon">
+                Synocti
+            </a>
+        </div>
+
+        <!-- Desktop navigation -->
+        <nav class="main-nav">
+            <!-- Later in the desktop navigation -->
+            <ul class="nav-list">
+                <li><a href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{
+                        'header.home' | translate }}</a></li>
+
+                <!-- Change from dropdown to regular link -->
+                <li><a href="#" routerLink="/services" routerLinkActive="active">{{ 'header.services' | translate }}</a>
+                </li>
+
+                <li><a href="#" routerLink="/portfolio" routerLinkActive="active">{{ 'header.portfolio' | translate
+                        }}</a></li>
+
+                <li class="dropdown">
+                    <a href="#" (click)="toggleDropdown('about', $event)">
+                        {{ 'header.aboutUs' | translate }} <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" routerLink="/story">{{ 'header.ourStory' | translate }}</a></li>
+                        <li><a href="#" routerLink="/team">{{ 'header.meetTheTeam' | translate }}</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-actions">
+                <a href="#" routerLink="/contact" class="cta-button btn btn-primary">{{ 'header.contact' | translate
+                    }}</a>
+            </div>
+        </nav>
+
+        <div class="right-controls">
+            <!-- Language switcher dropdown -->
+            <div class="lang-dropdown">
+                <button class="lang-toggle" (click)="toggleDropdown('language', $event)" aria-label="Change language">
+                    <span>{{language.toUpperCase()}}</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu lang-menu" [class.show]="activeDropdown === 'language'">
+                    <li><a href="#" (click)="$event.preventDefault(); changeLanguage('fr')">FR</a></li>
+                    <li><a href="#" (click)="$event.preventDefault(); changeLanguage('en')">EN</a></li>
+                </ul>
+            </div>
+
+            <button class="theme-toggle icon-btn" (click)="toggleTheme()" aria-label="Toggle theme">
+                <i class="fas" [class.fa-sun]="isDarkTheme" [class.fa-moon]="!isDarkTheme"
+                    style="width: 1.5em; height: 1.5em; font-size: 1.5em; display: inline-flex; align-items: center; justify-content: center;"></i>
+            </button>
+
+            <button class="mobile-menu-toggle icon-btn" (click)="toggleMenu()" aria-label="Menu">
+                <i class="fas fa-bars"
+                    style="width: 1.5em; height: 1.5em; font-size: 1.5em; display: inline-flex; align-items: center; justify-content: center;"></i>
+            </button>
+        </div>
+    </div>
+</header>

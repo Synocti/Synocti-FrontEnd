@@ -1,0 +1,70 @@
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section">
+            <h3 class="company-name">
+                <img style="width: 12%; margin-right: 0.5em;" src="assets/logo/logo.svg" alt="Synocti Logo"
+                    class="logo-icon">
+                Synocti
+            </h3>
+            <p>{{ 'footer.tagline' | translate }}</p>
+            <div class="social-links">
+                <app-social-icon link="https://www.linkedin.com/company/synocti/"
+                    icon="fab fa-linkedin"></app-social-icon>
+                <app-social-icon link="https://github.com/SyNocti" icon="fab fa-github"></app-social-icon>
+                <app-social-icon link="https://www.instagram.com/synocti" icon="fab fa-instagram"></app-social-icon>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+            <h4>{{ 'footer.services' | translate }}</h4>
+            <ul>
+                <li><a href="#" routerLink="/services">{{ 'services.servicesList.web.title' | translate }}</a>
+                </li>
+                <li><a href="#" routerLink="/services">{{ 'services.servicesList.mobile.title' | translate }}</a>
+                </li>
+                <li><a href="#" routerLink="/services">{{ 'services.servicesList.desktop.title' | translate }}</a>
+                </li>
+                <li><a href="#" routerLink="/services">{{ 'services.servicesList.hosting.title' | translate }}</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-section">
+            <h4>{{ 'footer.company.title' | translate }}</h4>
+            <ul>
+                <li><a href="#" routerLink="/story">{{ 'footer.company.story' | translate }}</a></li>
+                <li><a href="#" routerLink="/team">{{ 'footer.company.team' | translate }}</a></li>
+                <li><a href="#" routerLink="/portfolio">{{ 'footer.company.portfolio' | translate }}</a></li>
+                <li><a href="#" routerLink="/contact">{{ 'footer.company.contact' | translate }}</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+            <h4>{{ 'footer.contact.title' | translate }}</h4>
+            <ul>
+                <li>
+                    <a href="mailto:{contact@synocti.ca}"><i class="fas fa-envelope"></i> contact&#64;synocti.ca</a>
+                </li>
+                <li>
+                    <a href="tel:{+1 (438) 493-5557}"><i class="fas fa-phone"></i>(438) 493-5557</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <div class="footer-container">
+            <p>{{ 'footer.copyright' | translate: {year: 2025} }}</p>
+            <div class="footer-legal">
+                <a href="#" routerLink="/legal/privacy">{{ 'footer.legal.privacy' | translate }}</a>
+                <a href="#" routerLink="/legal/terms">{{ 'footer.legal.terms' | translate }}</a>
+                <a href="#" routerLink="/legal/cookies">{{ 'footer.legal.cookies' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</footer>

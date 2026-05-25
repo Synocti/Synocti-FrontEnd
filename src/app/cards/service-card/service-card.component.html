@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-content">
+        <div class="service-icon"><i class="fas {{service.icon}}"></i></div>
+        <h3>{{ service.titleKey | translate }}</h3>
+        <p>{{ service.descriptionKey | translate }}</p>
+        <a [routerLink]="service.link" class="service-link">{{ 'common.learnMore' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+    </div>
+</div>

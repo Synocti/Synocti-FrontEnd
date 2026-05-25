@@ -1,0 +1,40 @@
+<main class="team-page">
+
+  <!-- Team Introduction -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="team-intro text-center" data-aos="fade-up">
+        <h2>{{ 'team.intro.title' | translate }}</h2>
+        <p class="team-description">
+          {{ 'team.intro.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Team Members -->
+      <div class="team-members">
+        @for (member of teamMembers; track member; let i = $index) {
+          <div class="team-member" [attr.data-aos]="'fade-up'"
+            [attr.data-aos-delay]="i * 100">
+            <div class="card member-card">
+              <div class="member-image">
+                <img [src]="member.image" [alt]="member.nameKey | translate">
+                <div class="hover-overlay">
+                  <div class="member-social">
+                    @for (social of member.socials; track social) {
+                      <app-social-icon [link]="social.link"
+                      [icon]="social.icon"></app-social-icon>
+                    }
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <h3>{{ member.nameKey | translate }}</h3>
+                <p class="member-role">{{ member.roleKey | translate }}</p>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+</main>

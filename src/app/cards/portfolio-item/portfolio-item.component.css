@@ -1,0 +1,66 @@
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px var(--shadow);
+  overflow: hidden;
+  height: 250px;
+}
+
+.portfolio-image {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  transform: translateY(100px);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+.portfolio-overlay p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.8;
+}
+
+.view-project {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+  padding-bottom: 0.2rem;
+}
+
+.view-project:hover {
+  color: var(--primary-light);
+}
+
+.view-project i {
+  margin-right: 0.4rem;
+}

@@ -1,0 +1,528 @@
+{
+    "header": {
+        "home": "Accueil",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "aboutUs": "À propos",
+        "ourStory": "Notre histoire",
+        "meetTheTeam": "Notre équipe",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "title": "Nous concevons des solutions numériques performantes pour entreprises et particuliers",
+            "subtitle": "Du logiciel sur mesure aux applications, sites web et hébergement entièrement géré, nous offrons une technologie fiable et évolutive conçue selon vos objectifs.",
+            "contact": "Contactez-nous",
+            "seeOurWork": "Voir nos réalisations"
+        },
+        "services": {
+            "title": "Nos services",
+            "subtitle": "Des solutions web complètes adaptées aux besoins de votre entreprise"
+        },
+        "about": {
+            "title": "Pourquoi nous choisir",
+            "subtitle": "Nous combinons expertise technique et excellence créative",
+            "description": "Chez Synocti, nous sommes dédiés à créer des solutions numériques fiables, évolutives et adaptées aux besoins réels. Notre équipe combine une expertise technique approfondie et un design réfléchi pour développer des logiciels, des applications, des sites web et des environnements d'hébergement qui soutiennent véritablement la réussite de nos clients.",
+            "features": {
+                "performance": "Performances rapides",
+                "responsive": "Design réactif",
+                "secure": "Code sécurisé",
+                "support": "Support dédié"
+            }
+        },
+        "portfolio": {
+            "title": "Nos dernières réalisations",
+            "subtitle": "Découvrez nos projets récents",
+            "seeMore": "Voir plus de projets"
+        },
+        "process": {
+            "title": "Notre processus",
+            "subtitle": "Une approche éprouvée pour livrer des résultats exceptionnels",
+            "steps": {
+                "discovery": {
+                    "title": "Découverte",
+                    "description": "Nous en apprenons davantage sur vous, votre entreprise, vos objectifs et votre public cible."
+                },
+                "design": {
+                    "title": "Conception",
+                    "description": "Nous définissons la structure et l'apparence de votre solution selon vos objectifs."
+                },
+                "development": {
+                    "title": "Développement",
+                    "description": "Nous développons votre solution avec un code propre, fiable et évolutif."
+                },
+                "launch": {
+                    "title": "Lancement",
+                    "description": "Nous déployons votre produit et veillons à son bon fonctionnement."
+                }
+            }
+        },
+        "cta": {
+            "title": "Construisons quelque chose d'exceptionnel ensemble",
+            "subtitle": "Prêt à faire passer votre présence web au niveau supérieur ?",
+            "button": "Demander un devis gratuitement"
+        }
+    },
+    "common": {
+        "learnMore": "En savoir plus"
+    },
+    "footer": {
+        "tagline": "Créer des expériences digitales qui transforment les entreprises et les particuliers",
+        "services": "Nos services",
+        "company": {
+            "title": "Entreprise",
+            "story": "Notre histoire",
+            "team": "Notre équipe",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contactez-nous"
+        },
+        "copyright": "© {{year}} Synocti. Tous droits réservés.",
+        "legal": {
+            "privacy": "Politique de Confidentialité",
+            "terms": "Conditions d'Utilisation",
+            "cookies": "Politique des Cookies"
+        }
+    },
+    "services": {
+        "intro": {
+            "title": "Nos Services de Développement",
+            "description": "Nous offrons une gamme complète de solutions de développement conçues pour aider les entreprises et les particuliers à établir une présence numérique forte. Du web au mobile, en passant par les applications de bureau et l'hébergement, nous avons l'expertise pour donner vie à votre vision."
+        },
+        "servicesList": {
+            "web": {
+                "title": "Développement Web",
+                "description": "Des sites web modernes et performants adaptés à vos besoins, du simple site vitrine aux applications web complexes.",
+                "features": [
+                    "Sites web réactifs et adaptatifs",
+                    "Applications web dynamiques",
+                    "Systèmes de gestion de contenu",
+                    "E-commerce et plateformes en ligne",
+                    "Optimisation SEO intégrée"
+                ]
+            },
+            "mobile": {
+                "title": "Développement Mobile",
+                "description": "Applications mobiles natives et multiplateformes pour iOS et Android qui offrent une expérience utilisateur exceptionnelle.",
+                "features": [
+                    "Applications iOS et Android natives",
+                    "Développement multiplateforme",
+                    "Interface utilisateur intuitive",
+                    "Intégration avec APIs et services",
+                    "Support et maintenance continue"
+                ]
+            },
+            "desktop": {
+                "title": "Développement Desktop",
+                "description": "Applications de bureau puissantes pour Windows, macOS et Linux adaptées à vos processus métier spécifiques.",
+                "features": [
+                    "Applications multiplateformes",
+                    "Interface utilisateur native",
+                    "Performance optimale",
+                    "Intégration système complète",
+                    "Mises à jour et support technique"
+                ]
+            },
+            "hosting": {
+                "title": "Hébergement et Maintenance",
+                "description": "Services d'hébergement fiables et maintenance continue pour garantir que vos applications fonctionnent toujours de manière optimale.",
+                "features": [
+                    "Hébergement sécurisé et performant",
+                    "Sauvegardes automatiques fréquentes",
+                    "Surveillance 24/7",
+                    "Mises à jour de sécurité",
+                    "Support technique prioritaire"
+                ]
+            }
+        },
+        "technologies": {
+            "title": "Technologies que nous utilisons",
+            "subtitle": "Des outils modernes et éprouvés pour créer des solutions performantes"
+        },
+        "cta": {
+            "title": "Prêt à commencer ?",
+            "subtitle": "Discutons de comment nous pouvons aider votre entreprise à réussir en ligne.",
+            "contact": "Contactez-nous"
+        }
+    },
+    "portfolio": {
+        "visitWebsite": "Visiter le site"
+    },
+    "story": {
+        "origin": {
+            "title": "Comment Tout a Commencé",
+            "text": [
+                "Nous avons commencé comme deux étudiants en informatique qui ont refusé d’attendre la bonne opportunité. Au lieu de suivre le parcours traditionnel et d’espérer acquérir de l’expérience, nous avons choisi de la créer nous-mêmes.",
+                "Début 2025, nous avons lancé notre entreprise de développement avec une mission claire: concevoir des solutions numériques concrètes et efficaces tout en élargissant continuellement notre expertise. Notre formation nous offre une base technique solide et notre ambition nous pousse à produire un travail moderne, performant et soigné.",
+                "Nous abordons chaque projet avec confiance, curiosité et une vraie exigence de qualité. Qu’il s’agisse de logiciels, d’applications, de sites web ou d’hébergement, nous créons des solutions qui apportent de la valeur et contribuent à la réussite de nos clients."
+            ],
+            "imageAlt": "Nos Fondateurs"
+        },
+        "mission": {
+            "title": "Notre mission",
+            "description": "Créer des solutions numériques fiables et de haute qualité qui rendent la technologie plus simple, plus accessible et plus utile pour nos clients. Nous privilégions une communication claire, une exécution efficace et des résultats qui apportent une véritable valeur à chaque projet."
+        },
+        "vision": {
+            "title": "Notre vision",
+            "description": "Bâtir une réputation durable en alliant innovation et professionnalisme, avec des solutions qui évoluent selon les besoins de nos clients. Nous visons à devenir un partenaire de confiance reconnu pour sa constance, son intégrité et son engagement réel envers la croissance."
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "subtitle": "Les principes qui guident tout ce que nous faisons",
+            "excellence": {
+                "title": "Excellence",
+                "description": "Nous visons l'excellence dans chaque ligne de code et pixel de design."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "Nous adoptons de nouvelles technologies et approches pour résoudre des problèmes complexes."
+            },
+            "integrity": {
+                "title": "Intégrité",
+                "description": "Nous construisons des relations basées sur l'honnêteté, la transparence et les pratiques éthiques."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "description": "Nous croyons au pouvoir du travail d'équipe et du partenariat avec nos clients."
+            }
+        },
+        "cta": {
+            "title": "Prêt à travailler ensemble ?",
+            "subtitle": "Créons quelque chose d'extraordinaire pour vous.",
+            "contact": "Contactez-nous",
+            "services": "Nos services"
+        }
+    },
+    "team": {
+        "intro": {
+            "title": "Notre Équipe Talentueuse",
+            "description": "Nous réunissons une solide expertise technique et une capacité créative à résoudre les problèmes pour fournir des résultats exceptionnels. Avec un groupe concentré et efficace, vous avez un accès direct aux personnes qui prennent les décisions et conçoivent chaque solution."
+        },
+        "members": {
+            "hugo": {
+                "name": "Hugo Levacher",
+                "role": "Co-Fondateur & Développeur"
+            },
+            "henri": {
+                "name": "Henri Saumure",
+                "role": "Co-Fondateur & Développeur"
+            }
+        }
+    },
+    "contact": {
+        "info": {
+            "title": "Informations de contact",
+            "subtitle": "Contactez-nous en utilisant l'une des méthodes suivantes et nous vous répondrons dans les plus brefs délais.",
+            "email": {
+                "label": "E-mail"
+            },
+            "phone": {
+                "label": "Téléphone"
+            },
+            "hours": {
+                "label": "Heures d'ouverture",
+                "value": "Lundi - Vendredi: 9h - 17h"
+            }
+        },
+        "form": {
+            "title": "Envoyez-nous un message",
+            "success": "Merci ! Votre message a été envoyé avec succès.",
+            "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+            "fullName": {
+                "label": "Nom complet",
+                "placeholder": "Jean Dupont",
+                "required": "Veuillez entrer votre nom",
+                "minlength": "Le nom doit comporter au moins 2 caractères"
+            },
+            "email": {
+                "label": "Adresse e-mail",
+                "placeholder": "jeandupont@exemple.com",
+                "required": "Veuillez entrer votre e-mail",
+                "invalid": "Veuillez entrer une adresse e-mail valide"
+            },
+            "phone": {
+                "label": "Numéro de téléphone",
+                "placeholder": "(555) 123-4567",
+                "invalid": "Veuillez entrer un numéro de téléphone valide"
+            },
+            "contactMethod": {
+                "label": "Méthode de contact préférée",
+                "options": {
+                    "email": "E-mail",
+                    "phone": "Téléphone"
+                }
+            },
+            "subject": {
+                "label": "Sujet",
+                "placeholder": "Comment pouvons-nous vous aider ?"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Parlez-nous de votre projet ou de votre question...",
+                "required": "Veuillez entrer votre message",
+                "minlength": "Le message doit comporter au moins 10 caractères"
+            },
+            "submit": "Envoyer le message",
+            "sending": "Envoi en cours..."
+        },
+        "map": {
+            "title": "Nous trouver"
+        }
+    },
+    "notFound": {
+        "content": {
+            "title": "Oups ! Nous ne pouvons pas trouver cette page",
+            "message": "La page que vous recherchez a peut-être été supprimée, son nom a été modifié, ou elle est temporairement indisponible."
+        },
+        "buttons": {
+            "home": "Aller à l'Accueil",
+            "contact": "Contactez-Nous"
+        }
+    },
+    "legal": {
+        "lastUpdated": "Dernière mise à jour",
+        "documents": {
+            "privacy": {
+                "title": "Politique de Confidentialité",
+                "lastUpdated": "23 mai 2025",
+                "sections": [
+                    {
+                        "heading": "Introduction",
+                        "content": [
+                            "Cette politique de confidentialité explique comment Synocti (\"nous\", \"notre\" ou \"nos\") collecte, utilise et divulgue vos informations lorsque vous utilisez notre site web, nos services et nos produits.",
+                            "En utilisant nos services, vous acceptez la collecte et l'utilisation de vos informations conformément à cette politique."
+                        ]
+                    },
+                    {
+                        "heading": "Informations que nous collectons",
+                        "content": [
+                            "Nous ne collectons que les informations personnelles que vous fournissez volontairement lorsque vous utilisez nos formulaires de contact. Ces informations sont utilisées uniquement dans le but de répondre à vos demandes et d'améliorer nos services.",
+                            "• Données personnelles : Lorsque vous remplissez un formulaire de contact, nous pouvons vous demander de fournir certaines informations personnellement identifiables (\"Données personnelles\"). Cela peut inclure :",
+                            "- Votre nom complet",
+                            "- Adresse e-mail",
+                            "- Numéro de téléphone (si fourni)",
+                            "- Le contenu de votre message ou demande",
+                            "• Aucune collecte automatique : Nous ne collectons pas de données d'utilisation, de cookies ni ne suivons votre comportement de navigation sur notre site."
+                        ]
+                    },
+                    {
+                        "heading": "Comment nous utilisons vos informations",
+                        "content": [
+                            "Nous utilisons uniquement les informations personnelles que vous fournissez via nos formulaires de contact dans le but suivant :",
+                            "• Répondre à vos demandes ou questions soumises via le site web"
+                        ]
+                    },
+                    {
+                        "heading": "Conservation des données",
+                        "content": [
+                            "Nous conservons les informations que vous soumettez via nos formulaires de contact et tickets de support uniquement le temps nécessaire pour répondre à votre demande ou résoudre votre problème.",
+                            "Une fois qu'une demande ou un ticket de support est résolu, les données sont archivées à des fins de référence et de documentation. Les données archivées sont stockées de manière sécurisée et ne sont pas utilisées activement."
+                        ]
+                    },
+                    {
+                        "heading": "Transfert des données",
+                        "content": [
+                            "Nous ne transférons pas vos données à des tiers ni à des emplacements extérieurs à notre organisation.",
+                            "Toutes les informations soumises via notre site web, y compris les données personnelles, sont traitées et stockées en toute sécurité au sein de nos systèmes internes.",
+                            "Nous nous engageons à respecter votre vie privée et à garantir que vos informations restent protégées et sous notre contrôle à tout moment."
+                        ]
+                    },
+                    {
+                        "heading": "Vos droits",
+                        "content": [
+                            "Puisque nous ne collectons que les informations personnelles que vous nous soumettez volontairement via nos formulaires de contact, vos droits concernant ces informations incluent :",
+                            "• Le droit d'accéder aux informations que vous nous avez fournies",
+                            "• Le droit de demander la correction de vos informations de contact si elles sont inexactes",
+                            "• Le droit de demander la suppression de vos informations une fois votre demande ou ticket résolu",
+                            "• Le droit de retirer votre demande à tout moment",
+                            "Nous n'utilisons pas vos données à des fins de marketing, de prise de décision automatisée ou de profilage.",
+                            "Pour exercer l’un de ces droits, veuillez nous contacter aux coordonnées fournies à la fin de cette politique de confidentialité."
+                        ]
+                    },
+                    {
+                        "heading": "Modifications de cette politique de confidentialité",
+                        "content": [
+                            "Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de \"Dernière mise à jour\".",
+                            "Nous vous conseillons de consulter cette politique de confidentialité périodiquement. Les modifications de cette politique sont effectives dès leur publication sur cette page."
+                        ]
+                    },
+                    {
+                        "heading": "Conformité légale",
+                        "content": [
+                            "Bien que nous nous engagions à protéger votre vie privée, il existe des circonstances dans lesquelles nous pouvons être tenus de divulguer vos informations personnelles :",
+                            "• Si la loi, une ordonnance du tribunal ou une demande gouvernementale l'exige",
+                            "• Pour protéger et défendre nos droits légaux ou notre propriété",
+                            "• Pour prévenir ou enquêter sur une éventuelle activité illégale liée à notre service",
+                            "• Pour protéger la sécurité des utilisateurs ou du public",
+                            "Dans de tels cas, nous ne divulguerons que les informations strictement nécessaires pour respecter nos obligations légales."
+                        ]
+                    },
+                    {
+                        "heading": "Nous contacter",
+                        "content": [
+                            "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter :",
+                            "• Par e-mail : contact@synocti.ca",
+                            "• Par téléphone : (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "terms": {
+                "title": "Conditions d'Utilisation",
+                "lastUpdated": "23 mai 2025",
+                "sections": [
+                    {
+                        "heading": "Acceptation des Conditions",
+                        "content": [
+                            "En accédant ou en utilisant le site Web de Synocti (« la Société », « nous », « notre » ou « nos »), vous acceptez d’être lié par les présentes Conditions d’utilisation (« Conditions »). Si vous n’acceptez pas une partie de ces Conditions, vous ne pouvez pas accéder à notre site ou utiliser nos services.",
+                            "Ces Conditions s’appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent au site Web."
+                        ]
+                    },
+                    {
+                        "heading": "Utilisation du Site Web",
+                        "content": [
+                            "Vous ne pouvez utiliser notre site Web qu’à des fins légales et conformément à ces Conditions. Vous vous engagez à ne pas utiliser le site Web :",
+                            "• D'une manière qui enfreint les lois ou réglementations locales, nationales ou internationales applicables.",
+                            "• Pour exploiter, nuire ou tenter d'exploiter ou de nuire à des mineurs de quelque manière que ce soit.",
+                            "• Pour transmettre ou faire envoyer du matériel publicitaire ou promotionnel sans notre consentement écrit préalable.",
+                            "• Pour usurper l'identité de Synocti, d’un employé de Synocti, d’un autre utilisateur ou de toute autre personne ou entité."
+                        ]
+                    },
+                    {
+                        "heading": "Droits de Propriété Intellectuelle",
+                        "content": [
+                            "Tout le contenu présent sur ce site, y compris, sans s’y limiter, les textes, graphiques, logos, icônes, images, clips audio, vidéos, logiciels et compilations de données, est la propriété exclusive de Synocti ou de ses concédants, et est protégé par les lois sur le droit d’auteur, les marques, les brevets, le secret commercial et d'autres lois sur la propriété intellectuelle.",
+                            "Vous ne pouvez pas copier, reproduire, distribuer, modifier ou créer des œuvres dérivées de toute partie du site ou de son contenu sans l’autorisation écrite expresse de Synocti."
+                        ]
+                    },
+                    {
+                        "heading": "Exclusion de Garanties",
+                        "content": [
+                            "Ce site est fourni « EN L’ÉTAT » et « TEL QUE DISPONIBLE ». Nous ne garantissons pas que le site ou tout contenu, service ou fonctionnalité sera exempt d’erreurs, ininterrompu ou sécurisé, ou que les défauts seront corrigés.",
+                            "Dans la mesure maximale autorisée par la loi, nous déclinons toute garantie, expresse ou implicite, y compris mais sans s'y limiter les garanties de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon."
+                        ]
+                    },
+                    {
+                        "heading": "Limitation de Responsabilité",
+                        "content": [
+                            "Dans toute la mesure permise par la loi, Synocti et ses dirigeants, employés, contractuels ou agents ne seront en aucun cas responsables des dommages directs, indirects, accessoires, consécutifs ou punitifs résultant de votre accès ou utilisation du site ou de tout service, même si nous avons été informés de la possibilité de tels dommages.",
+                            "Cela inclut, sans s'y limiter, toute perte de profits, de données, de clientèle ou autres pertes immatérielles."
+                        ]
+                    },
+                    {
+                        "heading": "Liens et Services de Tiers",
+                        "content": [
+                            "Notre site peut contenir des liens vers des sites Web ou services tiers qui ne sont pas détenus ou contrôlés par Synocti.",
+                            "Nous n’avons aucun contrôle sur le contenu, les politiques de confidentialité ou les pratiques de ces sites ou services tiers, et nous déclinons toute responsabilité à cet égard. Vous reconnaissez que Synocti ne sera pas responsable, directement ou indirectement, de tout dommage ou perte causé par votre utilisation de ces contenus ou services."
+                        ]
+                    },
+                    {
+                        "heading": "Modifications des Conditions",
+                        "content": [
+                            "Nous pouvons modifier ces Conditions de temps à autre pour refléter les changements dans nos services, nos pratiques ou les exigences légales. La dernière version sera toujours affichée sur cette page avec la date de « Dernière mise à jour ».",
+                            "En continuant à utiliser le site après la publication des changements, vous acceptez d’être lié par les Conditions mises à jour."
+                        ]
+                    },
+                    {
+                        "heading": "Indemnisation",
+                        "content": [
+                            "Vous acceptez d’indemniser, de défendre et de dégager de toute responsabilité Synocti, ainsi que ses employés, contractants, dirigeants et agents, contre toute réclamation, responsabilité, dommage, perte et dépense, y compris les frais juridiques, résultant de votre violation des présentes Conditions ou de votre utilisation du site."
+                        ]
+                    },
+                    {
+                        "heading": "Droit Applicable",
+                        "content": [
+                            "Ces Conditions sont régies par les lois de la province de Québec et les lois fédérales du Canada qui y sont applicables, sans égard aux principes de conflits de lois.",
+                            "Tout litige découlant de ces Conditions sera soumis à la juridiction exclusive des tribunaux situés à Montréal, Québec."
+                        ]
+                    },
+                    {
+                        "heading": "Comptes Utilisateur",
+                        "content": [
+                            "Certaines fonctionnalités de nos Services, y compris l’accès à notre portail client, nécessitent la création d’un compte. Vous acceptez de fournir des informations exactes, à jour et complètes lors de l’inscription et de les mettre à jour au besoin.",
+                            "Vous êtes seul responsable du maintien de la confidentialité de vos identifiants de compte et de toutes les activités effectuées sous votre compte. Vous acceptez de nous informer immédiatement de toute utilisation non autorisée de votre compte ou de toute violation de la sécurité.",
+                            "Nous nous réservons le droit de suspendre ou de résilier votre compte à tout moment si nous croyons raisonnablement que vous avez enfreint les présentes Conditions ou si vous vous engagez dans une activité illégale ou frauduleuse."
+                        ]
+                    },
+                    {
+                        "heading": "Facturation et Paiements",
+                        "content": [
+                            "L’accès à certains Services peut nécessiter un paiement. Bien que notre modèle de tarification puisse varier selon le service ou le projet, vous serez toujours informé des frais applicables avant leur facturation.",
+                            "En acceptant d’utiliser un Service payant, vous nous autorisez à débiter votre mode de paiement sélectionné pour tous les frais associés à ce service.",
+                            "Nous nous réservons le droit de modifier nos tarifs ou modalités de facturation à tout moment avec préavis. La poursuite de l’utilisation des Services après l’entrée en vigueur de tels changements constitue votre acceptation des nouveaux tarifs.",
+                            "Tout défaut de paiement peut entraîner la suspension ou la résiliation de votre accès aux Services, y compris au portail client.",
+                            "Tous les frais sont non remboursables sauf indication contraire dans un accord écrit ou si la loi applicable l’exige."
+                        ]
+                    },
+                    {
+                        "heading": "Nous Contacter",
+                        "content": [
+                            "Si vous avez des questions concernant ces Conditions, vous pouvez nous contacter :",
+                            "• Courriel : contact@synocti.ca",
+                            "• Téléphone : (438) 493-5557"
+                        ]
+                    }
+                ]
+            },
+            "cookies": {
+                "title": "Politique des Cookies",
+                "lastUpdated": "23 mai 2025",
+                "sections": [
+                    {
+                        "heading": "Que sont les cookies",
+                        "content": [
+                            "Les cookies sont de petits fichiers texte envoyés à votre navigateur web par un site que vous visitez. Un fichier cookie est stocké dans votre navigateur et permet au site web de se souvenir de vos préférences et d'améliorer votre expérience utilisateur.",
+                            "Les cookies peuvent être \"persistants\" ou de \"session\". Les cookies persistants restent sur votre appareil lorsque vous êtes hors ligne, tandis que les cookies de session sont supprimés dès que vous fermez votre navigateur."
+                        ]
+                    },
+                    {
+                        "heading": "Comment nous utilisons les cookies",
+                        "content": [
+                            "Nous utilisons un nombre limité de cookies pour améliorer votre expérience sur notre site. Plus précisément, nous utilisons des cookies pour :",
+                            "• Mémoriser le thème du site sélectionné (mode clair ou sombre)",
+                            "• Mémoriser votre préférence linguistique (français ou anglais)",
+                            "Nous n'utilisons pas de cookies à des fins d'analyse, de publicité ou de suivi."
+                        ]
+                    },
+                    {
+                        "heading": "Types de cookies que nous utilisons",
+                        "content": [
+                            "Cookies de fonctionnalité : Ces cookies permettent à notre site web de se souvenir des choix que vous faites, comme le thème et la langue. Leur but est d'améliorer votre expérience personnalisée et d'éviter que vous ayez à reconfigurer vos préférences à chaque visite.",
+                            "Nous n'utilisons pas de cookies essentiels, analytiques ou publicitaires."
+                        ]
+                    },
+                    {
+                        "heading": "Cookies de tiers",
+                        "content": [
+                            "Nous n'utilisons aucun cookie de tiers. Aucune donnée de cookie n'est partagée avec ou collectée par des services tiers."
+                        ]
+                    },
+                    {
+                        "heading": "Quels sont vos choix concernant les cookies",
+                        "content": [
+                            "Si vous préférez éviter l'utilisation des cookies, vous pouvez les désactiver dans les paramètres de votre navigateur. Vous pouvez également supprimer les cookies déjà stockés dans votre navigateur.",
+                            "Veuillez noter que si vous désactivez les cookies, vos préférences de thème et de langue pourraient ne pas être retenues, ce qui pourrait affecter votre expérience de navigation."
+                        ]
+                    },
+                    {
+                        "heading": "Modifications de cette politique relative aux cookies",
+                        "content": [
+                            "Nous pouvons mettre à jour notre politique relative aux cookies de temps à autre. Toute modification sera publiée sur cette page avec une date de \"Dernière mise à jour\" actualisée.",
+                            "Nous vous recommandons de consulter cette politique périodiquement afin de rester informé de la manière dont nous utilisons les cookies."
+                        ]
+                    },
+                    {
+                        "heading": "Nous contacter",
+                        "content": [
+                            "Si vous avez des questions concernant notre politique relative aux cookies, veuillez nous contacter :",
+                            "• Par courriel : contact@synocti.ca",
+                            "• Par téléphone : (438) 493-5557"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
