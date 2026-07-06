@@ -12,4 +12,5 @@ import { TranslateModule } from '@ngx-translate/core';
     styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+    currentYear = new Date().getFullYear();
 }
